@@ -1,6 +1,6 @@
 # git ignore files
-*/notes/*.pdf
+notes/
 
 
 #Visual Studio stuff
-*.DS_Store
+.DS_Store
