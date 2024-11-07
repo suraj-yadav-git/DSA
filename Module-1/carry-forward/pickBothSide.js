@@ -17,7 +17,29 @@ B = 3
 output:
 8
 
-TC:
+TC:O(N)
 
-SC:
+SC:O(1)
 */
+
+const pickBothMaxSum = (A, B) => {
+    let leftSum = 0;
+    let rightSum = 0;
+    let maxSum = 0;
+
+    for(let i=A.length-1; i>=A.length-B; i--) {
+        rightSum += A[i];
+    }
+    for(let i=0; i<B; i++) {
+        leftSum += A[i];
+        rightSum -= A[A.length-B+i];
+        maxSum = (maxSum < (leftSum + rightSum)) ? (leftSum + rightSum) : maxSum
+    }
+
+    return maxSum;
+}
+
+A = [5, -2, 3 , 1, 2];
+B = 3;
+
+console.log(pickBothMaxSum(A,B));
