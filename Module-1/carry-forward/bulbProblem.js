@@ -15,3 +15,19 @@ TC: O(N)
 
 SC: O(1)
 */
+
+const setAllBulbOn = (A) => {
+    let cnt = 0;
+    for(let i=A.length-1; i>=0; i--) {
+        if(i === 0) {
+            if(A[i] === 0) cnt++;
+            return cnt;
+        }
+        if(A[i] !== A[i-1]) {
+            cnt++
+        }
+    }
+}
+
+A = [0, 1, 0, 1];
+console.log(setAllBulbOn(A));
