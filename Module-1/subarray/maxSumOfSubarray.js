@@ -11,8 +11,8 @@ C = [2, 1, 3, 4, 5]
 output:
 12
 
-TC: O()
-SC: O()
+TC: O(N^2)
+SC: O(1)
 */
 
 const maxSumOfSubarray = (A, B, C) => {
