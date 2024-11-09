@@ -31,8 +31,8 @@ const maxSumOfSubarray = (A, B, C) => {
     return maxSum;
 }
 
-A = 5;
-B = 12;
-C = [2, 1, 3, 4, 5];
+const A = 5;
+const B = 12;
+const C = [2, 1, 3, 4, 5];
 
 console.log(maxSumOfSubarray(A,B,C));
