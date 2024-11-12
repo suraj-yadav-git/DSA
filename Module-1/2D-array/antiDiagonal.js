@@ -14,9 +14,9 @@ output:
 6 8 0
 9 0 0
 
-TC:O()
+TC:O(N^2)
 
-SC:O()
+SC:O(N^2)
 */
 
 const getAntiDiagonal = (A) => {
