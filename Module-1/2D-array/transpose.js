@@ -1,6 +1,7 @@
 /*
 Given a 2D integer array A, return the transpose of A.
 The transpose of a matrix is the matrix flipped over its main diagonal, switching the matrix's row and column indices.
+NOTE: row and colms size can be diffrent
 
 input:
 A = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
