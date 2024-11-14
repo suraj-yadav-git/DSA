@@ -10,9 +10,9 @@ B = 3
 output:
 3
 
-TC: O()
+TC: O(N)
 
-SC: O()
+SC: O(1)
 */
 
 const leastAvg = (A, B) => {
