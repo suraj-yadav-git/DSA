@@ -8,9 +8,9 @@ ABEC
 output:
 6
 
-TC:
+TC: O(N)
 
-SC:
+SC: O(1)
 */
 
 const cntSubarray = (A) => {
