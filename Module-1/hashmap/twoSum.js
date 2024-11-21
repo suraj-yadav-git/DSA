@@ -9,11 +9,9 @@ B = 7
 output :
 1
 
-TC : O(N^2)
+TC : O(N)
 
-SC : O(1)
-
-**** Refer similar twoSum.js from hashmap folder ****
+SC : O(N)
 */
 
 const goodPair = (A, B) => {
