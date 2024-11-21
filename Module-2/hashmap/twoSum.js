@@ -9,23 +9,25 @@ B = 7
 output :
 1
 
-TC : O(N^2)
+TC : O(N)
 
-SC : O(1)
-
-NOTE: check another approach with TC: O(N) and SC: O(N) with hashmap 
-DSA/Module-2/hashmap/twoSum.js
+SC : O(N)
 */
 
 const goodPair = (A, B) => {
+    const seen = new Map();
     for(let i=0; i<A.length; i++) {
-        for(let j=i+1; j<A.length; j++) {
-            if(A[i] + A[j] === B) return 1;
+        const complement = B - A[i];
+        if( seen.has(complement)){
+            return 1;
         }
+        seen.set(A[i], true);
     }
+    return 0;
 }
 
-const A = [1,2,3,4];
-const B = 7;
+
+const A = [1,2,3,4,10];
+const B = 19;
 
 console.log(goodPair(A, B));
