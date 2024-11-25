@@ -11,7 +11,7 @@ output:
 
 TC: O(N)
 
-SC: O(1) [Since used array/object can not be more than 26]
+SC: O(1) [Since length of used array/object length can not be more than 26]
 */
 
 const isAnagrams = (A, B) => {
