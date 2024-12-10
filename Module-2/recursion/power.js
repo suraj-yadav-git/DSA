@@ -9,9 +9,9 @@ B = 3
 Output:
 8
 
-TC:
+TC: O(N)
 
-SC:
+SC: O(N)
 */
 
 const getPower = (A, B) => {
