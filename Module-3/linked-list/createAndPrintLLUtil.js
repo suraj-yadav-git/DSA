@@ -1,5 +1,6 @@
 /*
 This is util file and it will be used in other files to preapre linked list input and print linked list output.
+
 */
 
 export const createLLFromArray = (A) => {
