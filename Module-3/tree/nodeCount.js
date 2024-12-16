@@ -1,15 +1,16 @@
 /*
-Given a binary tree, return the inorder traversal of its nodes' values.
+You are given the root node of a binary tree A. You have to find the number of nodes in this tree.
 
 Input:
-     1
-    / \
-   6   2
-  /
- 3
+
+Values =  1      
+          / \     
+         4   3                       
+        /         
+       2  
 
 Output:
-3,6,1,2
+4 
 
 TC: O(N)
 
@@ -18,11 +19,9 @@ SC: O(H) (where H is height of tree)
 
 import {createTreeFromArray} from './createTreeUtil.js'
 
-const inOrder = (A) => {
-    if(!A) return;
-    inOrder(A.left);
-    console.log(A.data);
-    inOrder(A.right);
+const countNode = (A) => {
+    if(!A) return 0;
+    return 1 + countNode(A.left) + countNode(A.right);
 }
 
 //prepare linked list for input
@@ -40,4 +39,4 @@ let root = createTreeFromArray(A);
 */
 
 //main function
-inOrder(root);
+console.log(countNode(root))

@@ -11,9 +11,9 @@ Input:
 Output:
 3,6,2,1
 
-TC: T(N)
+TC: O(N)
 
-SC: T(H) (where H is height of tree)
+SC: O(H) (where H is height of tree)
 */
 
 import {createTreeFromArray} from './createTreeUtil.js'
