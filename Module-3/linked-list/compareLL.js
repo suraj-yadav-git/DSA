@@ -17,10 +17,16 @@ NOTE: We are considering complexity of only insertNode function not other util f
 */
 import {createLLFromArray} from './createAndPrintLLUtil.js'
 
-const compareLL = (A, B) => {
-    if(!A && !B) return 1;
-    else if(A.data === B.data) return compareLL(A.next, B.next);
-    else return 0;
+const compareLL = (A,B) => {
+    while(A && B){
+       
+        if(A.data !=B.data){
+            return false;
+        }
+        A = A.next;
+        B = B.next;
+    }
+    return  !A && !B;
 }
 
 //prepare linked list for input
