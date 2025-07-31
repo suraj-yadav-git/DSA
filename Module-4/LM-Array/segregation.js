@@ -1,3 +1,8 @@
+/*
+Array consist of only 0's, 1's and 2's. Write an algorithm to sort  
+this array in O(n) time complexity and O(1) Space complexity with only one traversal
+*/
+
 const segregation = (arr) => {
     let low = mid = 0;
     let high = arr.length - 1;
